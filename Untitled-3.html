@@ -1,65 +1,183 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>puppy portfolio</title>
+    <title>puppy portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap/css/styles.css">
 </head>
 
 <body>
-	<header class="container">
-    	<div class="row">
-        	<div class="col-md-6">
-            	<img class="tittle-logo"  src="bootstrap/images/logo.png" alt="Udacity logo">
-             </div>
-             <div class="col-md-6 text-right text-uppercase">
-             	<h1 class="tittle-super text-thin">Jane Doette</h1>
-                <h4>Front-end Ninja</h4>
-             </div>
-    	</div>
-    </header>   
+    <div class="container">
+        <header class="row">
+            <div class="col-md-6">
+                <img class="tittle-logo" src="bootstrap/images/logo.png" alt="Udacity logo">
+            </div>
+            <div class="col-md-6 text-right text-uppercase">
+                <h1 class="tittle-super text-thin">Jane Doette</h1>
+                <h2 class="sub-title">Front-end Ninja</h2>
+
+            </div>
+        </header>
         <div class="row">
-        	<div class="col-md-12">
-            	<hr class="hr">
+            <div class="col-md-12">
+                <hr class="hr">
             </div>
         </div>
         <div class="row">
             <figure class="col-md-12">
-				<img class="img-responsive center-block" src="bootstrap/images/puppy1.jpg" alt="Main puppy image!">
+                <img class="img-responsive center-block" src="bootstrap/images/puppy1.jpg" alt="Main puppy image!">
             </figure>
         </div>
-         <div class="row">
-        	<div class="col-md-12">
-				<h2 class="text-muted text-super">Featured Work</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-muted text-super">Featured Work</h2>
             </div>
         </div>
         <main class="row text-center">
-        	<figure class="col-md-3">
-            	<img class="img-responsive center-block" src="bootstrap/images/puppy2.jpg" alt="Appify puppy" >
-            	<h3 class="text-uppercase text-super">Appify</h3>
-            	<p>https://github.com/udacity/appify</p>
-       		</figure>
-        	<figure class="col-md-3">
-            	<img class="img-responsive center-block" src="bootstrap/images/puppy3.jpg" alt="Sun flower" >
-            	<h3 class="text-uppercase text-super">Sun flower</h3>
-            	<p>https://github.com/udacity/Sun flower</p>
-       		</figure>
-             <figure class="col-md-3">
-            	<img class="img-responsive center-block" src="bootstrap/images/puppy4.jpg" alt="Bokeh puppy" >
-            	<h3 class="text-uppercase text-super">Bokeh</h3>
-            	<p>https://github.com/udacity/Bokeh</p>
-       		</figure>
-            <figure class="col-md-3">
-            	<img class="img-responsive center-block" src="bootstrap/images/puppy5.jpg" alt="Chris puppy" >
-            	<h3 class="text-uppercase text-super">Chris</h3>
-            	<p>https://github.com/udacity/Chris</p>
-       		</figure>
-                           
-     </main>           
+
+            <article class="col-md-3">
+
+                <!-- Button trigger modal -->
+                <div type="img" class="img" data-toggle="modal" data-target="#myModal1">
+                    <img class="img-responsive center-block" src="bootstrap/images/puppy2.jpg" alt="Appify puppy">
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="img" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h3 class="modal-title" id="myModalLabel">Appify</h3>
+                            </div>
+                            <div class="modal-body">
+                                我家有一只小黄狗，它身上披着金黄色的毛，亮得像搽过油一样；圆圆的、漆黑发亮的眼睛像珠子似的，整天滴溜溜地转；嘴巴长长的，还有一对很灵的耳朵，如果附近有丁点响动，它就会把耳朵竖起来；黄色的小爪像四朵梅花，那条撅着的尾巴总是悠闲不停地摇摆着，样子非常讨人喜欢。我给它取名叫“小黄”。
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-uppercase text-super">Appify</h4>
+                <p>https://github.com/udacity/appify</p>
+
+            </article>
+
+            <article class="col-md-3">
+
+                <!-- Button trigger modal -->
+                <div type="img" class="img" data-toggle="modal" data-target="#myModal2">
+                    <img class="img-responsive center-block" src="bootstrap/images/puppy3.jpg" alt="Sun flower">
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h3 class="modal-title" id="myModalLabel">Sun flower</h3>
+                            </div>
+                            <div class="modal-body">
+                                “小黄”白天喜欢躺在地上晒太阳，可到了晚上，它像看门的卫士一样守着，一有动静就汪汪地叫起来。它从不挑食，就算剩饭剩菜也吃得津津有味。它还非常聪明，也善于动脑。有一次，我在桶里装满清水，“小黄”摇着尾巴跑过来，伸长了脖子去喝水，可桶太高，总也喝不着，它没有泄气，围着桶绕了几圈，然后得意地昂起头，前爪趴住桶边，使劲向外压，桶倒了，水流了一地，它也喝够了，呵呵!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-uppercase text-super">Sun flower</h4>
+                <p>https://github.com/udacity/Sun flower</p>
+
+            </article>
+
+            <article class="col-md-3">
+
+                <!-- Button trigger modal -->
+                <div type="img" class="img" data-toggle="modal" data-target="#myModal3">
+                    <img class="img-responsive center-block" src="bootstrap/images/puppy4.jpg" alt="Bokeh puppy">
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h3 class="modal-title" id="myModalLabel">Bokeh</h3>
+                            </div>
+                            <div class="modal-body">
+                                “小黄”还会长短不同地叫唤。高兴时叫的很热情，不高兴时冷漠的叫。别人欺负我的时候，它见了，还会帮我。它汪汪地叫，别人都害怕，不敢再欺负我了。
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-uppercase text-super">Bokeh</h4>
+                <p>https://github.com/udacity/Bokeh</p>
+
+            </article>
+
+            <article class="col-md-3">
+
+                <!-- Button trigger modal -->
+                <div type="img" class="img" data-toggle="modal" data-target="#myModal4">
+                    <img class="img-responsive center-block" src="bootstrap/images/puppy5.jpg" alt="Chris puppy">
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h3 class="modal-title" id="myModalLabel">Chris</h3>
+                            </div>
+                            <div class="modal-body">
+                                这就是我家的“小黄”，真是天真活泼，顽皮可爱啊!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-uppercase text-super">Chris</h4>
+                <p>https://github.com/udacity/Chris</p>
+
+            </article>
+
+        </main>
+        <footer></footer>
+    </div>
 
 </body>
+
 </html>
